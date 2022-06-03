@@ -19,16 +19,13 @@ final class AlbumViewModel: ObservableObject {
         self.album = album
         self.api = api
     }
-    
+        
     func getAlbumInfo() {
         let request = AlbumInfoRequest(albumID: album.id)
         api.send(request)
-//            .indices.forEach({ item in
-//                return TrackRowViewModel(item: item)
-//            })
             .map { response -> [TrackRowViewModel]? in
-                return response.tracks?.data.map { item in
-                    return TrackRowViewModel(item: item)
+                return response.tracks?.data.enumerated().map { index, item in
+                    return TrackRowViewModel(item: item, index: index + 1)
                 }
             }
             .receive(on: DispatchQueue.main)

@@ -31,6 +31,7 @@ struct AlbumView: View {
         }
         .onAppear(perform: viewModel.getAlbumInfo)
         .navigationBarTitle("\(viewModel.album.title)")
+        .lineLimit(2)
     }
 }
 

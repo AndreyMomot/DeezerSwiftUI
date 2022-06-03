@@ -10,9 +10,11 @@ import SwiftUI
 
 struct TrackRowViewModel: Identifiable {
     var item: TracksResponse.Track
+    var index: Int
     
-    init(item: TracksResponse.Track) {
-      self.item = item
+    init(item: TracksResponse.Track, index: Int) {
+        self.item = item
+        self.index = index
     }
     
     var id: Int {

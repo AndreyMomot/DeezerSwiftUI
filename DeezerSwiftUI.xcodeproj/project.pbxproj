@@ -189,11 +189,11 @@
 		472875272833C0F0000DF869 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				472875282833C100000DF869 /* HomeView.swift */,
-				4728752A2833C124000DF869 /* HomeViewModel.swift */,
-				472875452833CB3F000DF869 /* ArtistRowViewModel.swift */,
 				472875472833D2FB000DF869 /* ArtistBuilder.swift */,
 				472875492833D368000DF869 /* ArtistRow.swift */,
+				472875452833CB3F000DF869 /* ArtistRowViewModel.swift */,
+				472875282833C100000DF869 /* HomeView.swift */,
+				4728752A2833C124000DF869 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -235,11 +235,11 @@
 		4728754B2833EBE8000DF869 /* Artist */ = {
 			isa = PBXGroup;
 			children = (
-				4728754C2833EC04000DF869 /* ArtistView.swift */,
-				4728754E2833EC0D000DF869 /* AlbumRow.swift */,
-				472875502833EC3B000DF869 /* ArtistViewModel.swift */,
-				472875522833EC4F000DF869 /* ArlbumRowViewModel.swift */,
 				4728755428343B30000DF869 /* AlbumBuilder.swift */,
+				4728754E2833EC0D000DF869 /* AlbumRow.swift */,
+				472875522833EC4F000DF869 /* ArlbumRowViewModel.swift */,
+				4728754C2833EC04000DF869 /* ArtistView.swift */,
+				472875502833EC3B000DF869 /* ArtistViewModel.swift */,
 			);
 			path = Artist;
 			sourceTree = "<group>";
@@ -247,10 +247,10 @@
 		4728755628343B38000DF869 /* Album */ = {
 			isa = PBXGroup;
 			children = (
-				4728755728343B47000DF869 /* AlbumViewModel.swift */,
-				4728755928343B56000DF869 /* TrackRowViewModel.swift */,
 				4728755B28343B63000DF869 /* AlbumView.swift */,
+				4728755728343B47000DF869 /* AlbumViewModel.swift */,
 				4728755D28343B72000DF869 /* TrackRow.swift */,
+				4728755928343B56000DF869 /* TrackRowViewModel.swift */,
 			);
 			path = Album;
 			sourceTree = "<group>";

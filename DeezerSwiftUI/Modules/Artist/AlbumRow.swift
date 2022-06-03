@@ -18,8 +18,7 @@ struct AlbumRow: View {
     VStack {
         if let imageUrl = viewModel.item.cover {
             AsyncImage(url: URL(string: imageUrl)) { image in
-                image.resizable()
-                     .aspectRatio(contentMode: .fit)
+                image.aspectRatio(contentMode: .fit)
             } placeholder: {
                 ProgressView()
             }.cornerRadius(10)
